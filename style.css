@@ -1,21 +1,62 @@
 @charset "utf-8";
 /* CSS Document */
+
+/* Navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
 }
-
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 
 }
-
-.topnav a:hover {
-  background-color: #ddd;
+.topnav a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.topnav a:visited {
   color: black;
-}	
+  background-color: transparent;
+  text-decoration: none;
+}
+.topnav a:hover {
+  color: teal;
+  background-color: transparent;
+  text-decoration: none;
+}
+.topnav a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*flexbox*/
+
+		.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: teal;
+  padding: 50px;
+  flex: 50%;
+}
+		@media all and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+			}}

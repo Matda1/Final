@@ -76,3 +76,8 @@
 }
 .button1 {border-radius:50%;}
 .button2{ border-radius: 60%;}
+
+.image-row {
+  display: flex;
+  justify-content: space-between; /* this will add equal space between each image */
+}

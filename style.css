@@ -1,6 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+img {
+  width: 250px;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 /* Navigation bar */
 .topnav {
   overflow: hidden;
@@ -10,6 +18,7 @@
   float: left;
   display: block;
   color: black;
+  font-size: 12px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

@@ -5,8 +5,25 @@
 <meta name="viewport" content="width=device-width,initial-scale-1"/>
 <title>Santikos</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.flex-container {
+  display: flex;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+	}
+@media all and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+			}}
+</style>	
+	
 </head>
 <body>
+	
 	<nav>
   <div class="topnav">
 	  <a href="index.html">Pure Cinema</a>
@@ -16,10 +33,25 @@
 	</nav>	
 	<h1 align="center">Cinamark</h1>	
 	
-	<div class="image-row">
-		<img src="image1.jpg" alt="Image 1">
-  		<img src="image2.jpg" alt="Image 2">
-  		<img src="image3.jpg" alt="Image 3">
-	</div>
+	<section id="images">
+	<div class="flex-container">
+  <div>
+	  <img src="images/santikos1.jpg" alt=""/>
+  </div>
+  <div>
+	   <img src="images/santikos2.jpg" alt=""/>
+  </div>
+  <div>
+	   <img src="images/santikos3.jpg" alt=""/>
+  </div>  
+</div>
+	</section>
+	
+	<section id="list">
+		<ul>
+			<li></li>
+		</ul>
+	</section>
+	
 </body>
 </html>

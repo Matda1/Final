@@ -45,6 +45,7 @@ img {
   text-decoration: none;
 }
 
+
 /*flexbox*/
 
 		.flex-container {
@@ -61,10 +62,13 @@ img {
 }
 
 .flex-item-right {
+  position: relative;
   background-color: teal;
   padding: 50px;
   flex: 50%;
+  
 }
+
 		@media all and (max-width: 600px) {
   .flex-container {
     flex-direction: column;

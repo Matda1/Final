@@ -1,6 +1,58 @@
 @charset "utf-8";
 /* CSS Document */
 
+.tittle{
+	text-align: center;
+}
+
+/* dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
 img {
   width: 250px;
   height: auto;
@@ -122,4 +174,36 @@ img {
   .row {
     flex-direction: column;
   }
+}
+
+/*spacing for p tag */
+ p.small {
+	 line-height: 0;
+	 font-size: 15px;
+	
+}
+ 
+p.big{
+	line-height: 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*div for contact page*/
+.center{
+  border: 5px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+/* no style for list */
+li{
+	list-style: none;
+	text-align: left;
+}
+ul{
+	text-align: left;
 }

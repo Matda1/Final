@@ -2,26 +2,48 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale-1"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>About</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<nav>
-  <div class="topnav">
-	  <a href="index.html">Pure Cinema</a>
+<body class="pgalt">
+<nav>
+  <div class="topnav" >
+	  <a href="index.html" style="font-size: 15px">Pure Cinema</a>
 	  <a href="santikos.html">Santikos</a>
 	  <a href="Casablanca.html">Casa Blanca</a>
-	</div>
+	  
+	  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Menu
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+	<a href="index.html">Home Page</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Page</a>
+  </div>
+  </div>
+  </div>	  
 	</nav>
 	<h1>About</h1>
 	<div class="center">
-			<p>
-			<li >
-				<ul>Phone Number: (214)-293-6072</ul>
-				<ul>Email: Reyes.cod1@gmail.com</ul>
-			</li>
-			</p>
+			<p>This site is dedicated to finding what each theater has to offer while saying some of the research that you have to do.<br> I always found it tedious to find out all the information about the theater and what they have to offer. Here is a place where I would like to share all the findings whether they be good or bad with a sprinkle of my own opinion to help those looking for the best deals/ experience around San Antonio. I don't have all the theaters, but so far it is the ones that I have been to enough to create a solid representation on. Thank you</p>
 	    </div>
+	
+<script>	
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 </body>
 </html>

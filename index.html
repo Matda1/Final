@@ -5,29 +5,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>HomePager</title>
 <link rel="stylesheet" href="style.css">
-<script>
-
-</script>
 </head>
 <body>
 <nav>
-  <div class="topnav">
+  <div class="topnav" >
 	  <a href="index.html" style="font-size: 15px">Pure Cinema</a>
 	  <a href="santikos.html">Santikos</a>
 	  <a href="Casablanca.html">Casa Blanca</a>
+	  
 	  <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">Dropdown
-    <i class="fa fa-caret-down"></i>
+  <button class="dropbtn" onclick="myFunction()">Menu
+  <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-content" id="myDropdown">
-    <a href="#">About</a>
-    <a href="#">Contact Page</a>
-    <a href="#">Link 3</a>
+	<a href="index.html">Home Page</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Page</a>
   </div>
-  </div> 
-	</div>
-</nav>	
+  </div>
+  </div>	  
+	</nav>
 	
+<section class="hero">	
 	<div class="flex-container">
   <div class="flex-item-left">
 	  <h2 align="left">We Know what is behind the screen</h2>
@@ -35,10 +34,10 @@
 	  <button class="button button1" onClick="document.location='santikos.html'">Santikos Casa Blanca</button>
 	  <button class="button button2" onClick="document.location='Casablanca.html'">Cinamark</button>
 </div>
-  <div class="flex-item-right">
-				<div>
-		</div></div>
+  <div class="flex-item-right"><img class="img-container" src="images/Family-Watching-Movie.png" alt=""> </div>
 	</div>
+</section>
+	
 <script>	
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");

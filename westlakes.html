@@ -2,31 +2,41 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale-1"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Westlakes</title>
 <link rel="stylesheet" href="style.css">	
 </head>
 <body>
-	
-	<nav>
-  <div class="topnav">
-	  <a href="index.html">Pure Cinema</a>
+<nav>
+  <div class="topnav" >
+	  <a href="index.html" style="font-size: 15px">Pure Cinema</a>
 	  <a href="santikos.html">Santikos</a>
 	  <a href="Casablanca.html">Casa Blanca</a>
-	</div>
-	</nav>	
-	<h1 style="text-align:center">Westlakes</h1>	
+	  
+	  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Menu
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+	<a href="index.html">Home Page</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Page</a>
+  </div>
+  </div>
+  </div>	  
+	</nav>
+	<h1>Santikos Westlakes</h1>	
 	
 	<section id="images">
 	<div class="flex-container">
   <div>
-	  <img src="images/santikos1.jpg" alt=""/>
+	  <img class="regpage" src="images/Westlakes/westlakes1.jpg" alt=""/>
   </div>
   <div>
-	   <img src="images/santikos2.jpg" alt=""/>
+	   <img class="regpage" src="images/Westlakes/westlakes2.jpeg" alt=""/>
   </div>
   <div>
-	   <img src="images/santikos3.jpg" alt=""/>
+	   <img class="regpage" src="images/Westlakes/westlakes3.jpg" alt=""/>
   </div>  
 </div>
 	</section>
@@ -48,5 +58,32 @@
 </div>
 	</section>
 	
+<section class="passage">
+		<article>
+			<h1 style="font-size: 40px">Overview</h1>
+			<p style="text-align: center">bla</p>
+            <h2 style="text-align: center; font-size: 30px">subscription</h2>			
+			<p style="text-align: center">nla</p>
+			<h3 style="text-align: center; font-size: 30px">Veiwing Options</h3>
+			<p style="text-align: center">bla bla</p>
+			
+		</article>
+	</section>
+
+<script>	
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 </body>
 </html>

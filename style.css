@@ -1,8 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
 /* pg= page & alt= alternative */
+p.frontPage{
+	font-size: 20px;
+	text-align: left;
+}
 
+p{
+	align-content: center;
+	text-align: center;
+}
 
+article{
+	margin-left: 150px;
+	margin-right: 150px;
+}
 
 body.pgalt{
 	background-color:teal;
@@ -137,6 +149,8 @@ img.regpage{
 @media all and (max-width: 600px) {
   .img-container {
     flex-direction: column;
+	margin-left: 100px;
+	margin-right: 100px;
 	  
 			}}
 
@@ -144,6 +158,8 @@ img.regpage{
 		@media all and (max-width: 600px) {
   .flex-container {
     flex-direction: column;
+	margin-left: 100px;
+	margin-right: 100px;
 			}}
 
 /*button*/	
